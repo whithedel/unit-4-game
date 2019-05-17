@@ -19,9 +19,7 @@ function Person(first, last, age, eye) {
   this.age = age;
   this.eyeColor = eye;
 }
-
 Person.prototype.nationality = "English";
-
 var myFather = new Person("John", "Doe", 50, "blue");
 document.getElementById("demo").innerHTML =
 "The nationality of my father is " + myFather.nationality; 
@@ -151,7 +149,9 @@ function updatePics(fromselectionID, toselectionID) {
         $(toselectionID + " img:last-child").attr("id", allPlayersArr[i].name);
         $(toselectionID + " img:last-child").attr("src", allPlayersArr[i].picture);
         $(toselectionID + " img:last-child").attr("width", 150);
-        $(toselectionID + " img:last-child").addClass("img-thumbnail");
+        $(toselectionID + " img:last-child").addClass("img-thumbnail card-img-top");
+        $(toselectionID + " img:last-child").append(allPlayersArr[i].name + "<br>");
+        $(toselectionID + " img:last-child").append("HP: " + allPlayersArr[i].health);
     }
 }
 
@@ -226,7 +226,7 @@ $(document).on("click", "img", function () {
         updatePics("#game", "#compPlayerRemainderDiv");
         $("#userPlayerDiv").append(this); // appends the selected userPlayer to the div
         $("#userPlayerDiv").addClass("animated zoomIn");
-        $("#userPlayerDiv").append(userPlayer.name);
+        $("#userPlayerDiv").append("<br>" + userPlayer.name);
         $("#userPlayerHealthDiv").append("HP: " + userPlayer.health);
         $("#userPlayerHealthDiv").addClass("animated zoomIn");
     }
@@ -288,5 +288,3 @@ $(document).ready(function () {
     startingPlayer();
     allPlayerCards("#game");
 });
-
-

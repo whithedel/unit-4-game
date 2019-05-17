@@ -14,7 +14,7 @@
     <title>Mario RPG Game</title>
 </head>
 
-<body id="body">
+<body id="body" class="text-wrap">
     <div class="container-fluid ">
         <div class="wrapper animated zoomInDown">
             <div class="mario">
@@ -56,7 +56,7 @@
 
         <div class="row">
             <div id="game" class="col-2 animated slideInDown sidebar" style="height:650px; overflow:scroll;">
-             Scroll and Choose your weapon!
+             Scroll and Choose your Player!
             </div>
             <div class="col-8">
                 
@@ -68,8 +68,19 @@
                             <div id="userPlayerHealthDiv"></div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 float-left">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         <img src="./assets/images/vs_logo.png" alt="VS" width="100" />
+                        <div class="row">
+                                <div class="col-12 btn">
+                                    <div id="messageDescription"></div>
+                                    <br>
+                                    <button type="button" name="attack" id="attackBtn" class="btn btn-dark btn-lg">ATTACK!</button>
+                                </div>
+                            </div>
                     </div>
                     <div class="col-5">
                         Enemy:
@@ -80,18 +91,17 @@
                     </div>
                 </div>
                 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-12 btn">
                         <div id="messageDescription"></div>
                         <br>
                         <button type="button" name="attack" id="attackBtn" class="btn btn-dark btn-lg">ATTACK!</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
-            <div class="col-2 animated slideInDown sidebar" style="height:650px; overflow:scroll;">
+            <div id="compPlayerRemainderDiv" class=" col-2 animated slideInDown sidebar" style="height:650px; overflow:scroll;">
                 Enemies remaining:
-                <div id="compPlayerRemainderDiv" class="card card-image-top"></div>
             </div>
 
         </div>

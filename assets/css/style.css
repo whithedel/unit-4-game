@@ -5,19 +5,29 @@ body {
     font-family: 'Ewert', cursive;
 font-family: 'Ranchers', cursive;
     color:  rgb(212, 57, 38);
+    font-weight: bold;
+   font-size: 1.5rem;
 }
 .card {
-    max-width:50%;
+    /* max-width:50%; */
     /* height:50%; */
 }
 
-#userPlayerDiv {
+/* #userPlayerDiv {
     background-color: rgb(117,249,240,0.800);
+} */
+
+#userPlayerDiv img {
+    width: 60% !important;
+    height: auto !important; 
 }
 
 #compPlayerRemainderDiv img {
     background-color: rgb(117,249,240,0.800);
 }
+/* #compPlayerRemainderDiv {
+    background-color: rgb(117,249,240,0.800);
+} */
 /* reset-#compPlayerRemainderDiv img {
     background-color : 0 !important;
     border-style : none;
@@ -25,8 +35,13 @@ font-family: 'Ranchers', cursive;
 
 #compPlayerDiv img {
     background-color: rgb(117,249,240,0.800);
+    width: 60% !important;
+    height: auto !important; 
 }
 
+#messageDescription {
+    color: rgb(204, 152, 55);
+}
 /* #userPlayerDiv img {
     image-resolution: 50% !important;
 } */
