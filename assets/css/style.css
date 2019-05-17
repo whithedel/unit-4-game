@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Ewert&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Ewert|Ranchers&display=swap');
 
 body {
     background-color: rgb(117,249,240);
     font-family: 'Ewert', cursive;
+font-family: 'Ranchers', cursive;
     color:  rgb(212, 57, 38);
 }
 .card {
