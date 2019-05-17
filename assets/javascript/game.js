@@ -103,14 +103,18 @@ function isAlive(activePlayer) {
 
 //function to check if the userPlayer has won 
 function hasWon() {
-    if (allPlayersArr.length === 0 && userPlayer.health > 0 && ($('#compPlayerRemainderDiv').is(':empty'))) {
+    if (allPlayersArr.length === 0 && userPlayer.health > 0 && !restartGame()) {
         $('audio#youWinAudio')[0].play();
         return true;
     }
     
     else return false;    
 }
+//function to be able to restart the game if user has won.
 
+function restartGame(){if ($( "#compPlayerRemainderDiv" ).has( "img" ).length){
+    return true ;
+} else return false }
 
 //Given a jQuery object that represents a set of DOM elements, the .children() method allows us to search through the children of these elements in the DOM tree and construct a new jQuery object from the matching elements. The .children() method differs from .find() in that .children() only travels a single level down the DOM tree while .find() can traverse down multiple levels to select descendant elements (grandchildren, etc.) as well. Note also that like most jQuery methods, .children() does not return text nodes; to get all children including text and comment nodes, use .contents().
 
