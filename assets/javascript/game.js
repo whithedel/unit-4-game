@@ -73,19 +73,21 @@ allPlayer.prototype.createCounterDamage = function(activePlayer){
 //creates all playerscards
 //Math.floor(Math.random() * 10) + 1) returns a random integer between 1 and 10 
 function startingPlayer() {
-    var mario = new allPlayer('Mario Mario', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/MarioNSMBUDeluxe.png");
+    var mario = new allPlayer('Mario Mario', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/MarioNSMBUDeluxe.png");
 
-    var luigi = new allPlayer('Luigi Mario', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/LuigiNSMBW.png");
+    var luigi = new allPlayer('Luigi Mario', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/LuigiNSMBW.png");
 
-    var princessPeach = new allPlayer('Princess Peach', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Peach_(Super_Mario_3D_World).png");
+    var princessPeach = new allPlayer('Princess Peach', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Peach_(Super_Mario_3D_World).png");
 
-    var toad = new allPlayer('Toad', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Toad_3D_Land.png");
+    var toad = new allPlayer('Toad', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Toad_3D_Land.png");
 
-    var daisy = new allPlayer('Princess Daisy', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Daisy_(Super_Mario_Party).png");
+    var daisy = new allPlayer('Princess Daisy', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Daisy_(Super_Mario_Party).png");
 
-    var browser = new allPlayer('Browser', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/BowserNSMBUD.png");
+    var browser = new allPlayer('Browser', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/BowserNSMBUD.png");
 
-    allPlayersArr.push(mario, luigi, princessPeach, toad, daisy, browser);
+    var yoshi = new allPlayer('Yoshi', Math.floor(Math.random() * 100) + 130, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/YoshiMarioParty10.png");
+
+    allPlayersArr.push(mario, luigi, princessPeach, toad, daisy, browser, yoshi);
 };
 
 //storing the original damage value
