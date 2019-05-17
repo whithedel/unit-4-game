@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mario.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Mario RPG Game</title>
+</head>
+
+<body id="body">
+    <div class="container-fluid ">
+        <div class="wrapper animated zoomInDown">
+            <div class="mario">
+                <div class="sprite"></div>
+            </div>
+            <div class="foreground">
+                <div class="bushes bushes-1"></div>
+                <div class="bushes bushes-2"></div>
+                <div class="bushes bushes-3"></div>
+                <div class="bushes bushes-4"></div>
+                <div class="ground"></div>
+            </div>
+            <div class="midground">
+                <div class="hills hills-1"></div>
+                <div class="hills hills-2"></div>
+            </div>
+            <div class="background">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="cloud cloud-3"></div>
+                <div class="cloud cloud-7"></div>
+                <div class="cloud cloud-4"></div>
+                <div class="cloud cloud-5"></div>
+                <div class="cloud cloud-6"></div>
+                <div class="cloud cloud-8"></div>
+            </div>
+        </div>
+        <nav class="navbar navbar-light img-fluid row mr-0 pr-0" style="background-color: rgb(117, 249, 240)">
+            <div class="col-12">
+                <img style="height: 70px;" class="img-fluid" src="./assets/images/Mario_Series_Logo.svg"
+                    alt="Mario logo" />
+                <span class="navbar-brand mb-0 pb-0"><span
+                        style="color:rgba(185, 5, 5, 0.651); font-size: 20px;letter-spacing: 10px;">MARIO RPG
+                        GAME</span></span>
+            </div>
+        </nav>
+
+
+
+        <div class="row">
+            <div id="game" class="col-2 animated slideInDown sidebar" style="height:650px; overflow:scroll;">
+             Scroll and Choose your weapon!
+            </div>
+            <div class="col-8">
+                
+                <div class="row text-center">
+                    <div class="col-5">
+                        Player:
+                        <div class="container">
+                            <div id="userPlayerDiv"></div>
+                            <div id="userPlayerHealthDiv"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <img src="./assets/images/vs_logo.png" alt="VS" width="100" />
+                    </div>
+                    <div class="col-5">
+                        Enemy:
+                        <div class="container">
+                            <div id="compPlayerDiv"></div>
+                            <div id="compPlayerHealthDiv"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 btn">
+                        <div id="messageDescription"></div>
+                        <br>
+                        <button type="button" name="attack" id="attackBtn" class="btn btn-dark btn-lg">ATTACK!</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2 animated slideInDown sidebar" style="height:650px; overflow:scroll;">
+                Enemies remaining:
+                <div id="compPlayerRemainderDiv" class="card card-image-top"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <audio volume='0.2' id="audio"  loop>
+        <source src="./assets/media/mario-theme-song.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameStartAudio">
+        <source src="./assets/media/start_the_game.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="youLoseAudio">
+        <source src="./assets/media/you_lose.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="youWinAudio">
+        <source src="./assets/media/you_win.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="beatCardAudio">
+        <source src="./assets/media/beat_card.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="attackAudio">
+        <source src="./assets/media/attack.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Ewert&display=swap');
+
+
+body {
+    background-color: rgb(117,249,240);
+    font-family: 'Ewert', cursive;
+    color:  rgb(212, 57, 38);
+}
+.card {
+    max-width:50%;
+    /* height:50%; */
+}
+
+#userPlayerDiv {
+    background-color: rgb(117,249,240,0.800);
+}
+
+#compPlayerRemainderDiv img {
+    background-color: rgb(117,249,240,0.800);
+}
+/* reset-#compPlayerRemainderDiv img {
+    background-color : 0 !important;
+    border-style : none;
+} */
+
+#compPlayerDiv img {
+    background-color: rgb(117,249,240,0.800);
+}
+
+/* #userPlayerDiv img {
+    image-resolution: 50% !important;
+} */
+
+/* .img-thumbnail {
+    max-width: 150% !important;
+} */
+
+/* .card-img-top {
+    max-width: 150% !important;
+} */
