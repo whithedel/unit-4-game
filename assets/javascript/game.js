@@ -81,7 +81,11 @@ function startingPlayer() {
 
     var toad = new allPlayer('Toad', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Toad_3D_Land.png");
 
-    allPlayersArr.push(mario, luigi, princessPeach, toad);
+    var daisy = new allPlayer('Princess Daisy', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/Daisy_(Super_Mario_Party).png");
+
+    var browser = new allPlayer('Browser', Math.floor(Math.random() * 100) + 100, Math.floor(Math.random() * 40) + 10, Math.floor(Math.random() * 28) + 8, "./assets/images/BowserNSMBUD.png");
+
+    allPlayersArr.push(mario, luigi, princessPeach, toad, daisy, browser);
 };
 
 //storing the original damage value
